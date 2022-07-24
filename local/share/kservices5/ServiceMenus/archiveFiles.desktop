@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+X-KDE-Priority=TopLevel
+X-KDE-Submenu=Compress files
+Actions=add;split;ultra
+MimeType=application/octet-stream;inode/directory
+Terminal=true
+
+[Desktop Action add]
+Name=Archive without compression
+Icon=add-files-to-archive
+Exec=/usr/local/bin/archiveFiles.sh -s %U
+
+[Desktop Action split]
+Name=Split into 2GB files
+Icon=add-files-to-archive
+Exec=/usr/local/bin/archiveFiles.sh -d %U
+
+[Desktop Action ultra]
+Name=Ultra compression
+Icon=add-files-to-archive
+Exec=/usr/local/bin/archiveFiles.sh -u %U
