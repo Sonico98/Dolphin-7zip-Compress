@@ -2,7 +2,7 @@
 
 
 ### Rename the folder "local" to ".local" and move it to your $HOME.
-The path would look something like /home/<user>/.local
+The path would look something like `/home/<user>/.local`.
 The command to do so right from the current directory would be:
 
 `mv ./local ./.local && cp -r ./.local ~/`
