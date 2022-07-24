@@ -7,7 +7,7 @@ The command to do so right from the current directory would be:
 
 `mv ./local ./.local && cp -r ./.local ~/`
 
-### Give execute permissions
+### Give execute permissions to the script
 `chmod +x ./usr/local/bin/archiveFiles.sh`
 
 ### As root, copy the "usr" folder to root ("/")
