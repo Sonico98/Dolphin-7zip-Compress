@@ -36,8 +36,8 @@ while getopts ":sdu:" option; do
 		s) # Store
 			7z -tzip -m0=Copy a "$archivename".zip "${@:2}"
 			exit;;
-		d) # Divide into 2GB files
-			7z -t7z -v2097152000b -m0=Copy a "$archivename".7z "${@:2}"
+		d) # Divide (split) into 4GB files
+			7z -t7z -v4194304000b -m0=Copy a "$archivename".7z "${@:2}"
 			exit;;
 		u) # Ultra compression
 			7z -t7z -m0=lzma2:d1024m -mx=9 -mfb=256 -md=128m -ms=on a "$archivename".7z "${@:2}"
